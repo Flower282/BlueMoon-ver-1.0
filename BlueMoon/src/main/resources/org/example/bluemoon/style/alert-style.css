@@ -1,0 +1,38 @@
+/* Căn giữa nút OK */
+.dialog-pane .button-bar {
+    -fx-alignment: center;
+}
+
+/* Đặt nền của hộp thoại */
+.dialog-pane {
+    -fx-background-color: #ffffff; /* Màu trắng, có thể đổi sang màu khác */
+}
+
+/* Đặt nền của phần header (tiêu đề) */
+.dialog-pane .header-panel {
+    -fx-background-color: #ffffff; /* Màu trắng, có thể thay đổi */
+}
+
+/* Đặt nền của phần nội dung */
+.dialog-pane .content {
+    -fx-background-color: #ffffff; /* Màu trắng đồng nhất */
+}
+
+/* Chỉnh kích thước header */
+.dialog-pane .header-panel .label {
+    -fx-font-size: 25px; /* Set size header = 25px */
+    -fx-font-weight: bold; /* In đậm tiêu đề */
+}
+
+/* Đặt nền của nút */
+.dialog-pane .button-bar {
+    -fx-background-color: #ffffff;
+}
+
+/* Ẩn icon */
+.dialog-pane .graphic-container {
+    visibility: hidden;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+

@@ -1,0 +1,27 @@
+.chart-bar {
+    -fx-background-color: linear-gradient(to bottom, #6ec1e4, #348ac7);
+    -fx-background-radius: 15px; /* Bo góc cột */
+}
+
+.chart-series-line {
+    -fx-stroke: transparent; /* Ẩn đường kẻ nối */
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent; /* Xóa nền */
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgba(0, 0, 0, 0.05); /* Làm lưới mờ đi */
+}
+
+.axis {
+    -fx-tick-label-fill: #666; /* Màu chữ của trục */
+    -fx-font-size: 12px;
+}
+
+.axis-label {
+    -fx-text-fill: #333; /* Màu nhãn trục */
+    -fx-font-weight: bold;
+}

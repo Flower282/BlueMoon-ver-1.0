@@ -1,0 +1,246 @@
+/* Main colors */
+.root {
+    -fx-background-color: #89D0F0;
+    -fx-font-family: "System";
+}
+
+/* Side menu styling */
+.side-pane {
+    -fx-background-color: #b3d6ff;
+}
+
+/* Button styles */
+/* Button styles */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #87CEEB, #00BFFF, #1E90FF); /* SkyBlue → DeepSkyBlue → DodgerBlue */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+    -fx-border-width: 30px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button-login {
+    -fx-background-color: linear-gradient(to bottom, #87CEEB, #00BFFF, #1E90FF); /* SkyBlue → DeepSkyBlue → DodgerBlue */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+    -fx-border-width: 30px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #B0E0E6, #00BFFF); /* LightBlue → DeepSkyBlue */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button:pressed {
+    -fx-background-color: derive(#1E90FF, 30%); /* Giữ màu sắc gần giống active nhưng sáng hơn */
+}
+
+.button.active {
+    -fx-background-color: #1E90FF; /* DodgerBlue */
+    -fx-text-fill: white;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Logout button specific style */
+#logoutButton {
+    -fx-background-color: linear-gradient(to bottom, #FF7043, #D32F2F);
+    -fx-text-fill: white;
+}
+
+#logoutButton:hover {
+    -fx-background-color: #ff0000;
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: #489bfa;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: #f0f0f0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #f8f9fa;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #b3d6ff;
+    -fx-text-fill: black;
+}
+
+/* Image styling */
+.image-view {
+    -fx-cursor: hand;
+}
+
+/* Pane containing logo */
+.logo-pane {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 2);
+}
+
+.pane-slidebar {
+    -fx-background-radius: 20px;
+    -fx-background-color: linear-gradient(to bottom, #E3EAFD, #C5D1FF); /* Gradient nhẹ */
+
+    /* Bóng đổ theo Material Design */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.3, 0, 4);
+}
+
+.anchor-pane {
+    -fx-background-color: rgba(255, 250, 250, 0.9); /* Màu tím nhạt hơn với độ trong suốt cao hơn */
+    -fx-background-radius: 20px; /* Bo góc 30px */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 5); /* Hiệu ứng nổi khối */
+}
+
+.anchor-pane-behind {
+    -fx-background-color: rgba(255, 255, 255, 0.01); /* Màu tím nhạt hơn với độ trong suốt cao hơn */
+    -fx-background-radius: 20px; /* Bo góc 30px */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 5); /* Hiệu ứng nổi khối */
+}
+
+.login-pane {
+    -fx-background-color: rgba(137, 208, 240, 0.2); /* Màu nền xanh trong suốt */
+    -fx-background-radius: 20px; /* Bo góc */
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 0, 0); /* Đổ bóng nhẹ */
+    -fx-border-radius: 15px;
+}
+
+.field {
+    -fx-background-color: #FFFFFF; /* Màu nền trắng */
+    -fx-background-radius: 20px; /* Bo góc 30px */
+    -fx-border-radius: 20px;
+    -fx-padding: 10px;
+    -fx-pref-width: 423px; /* Chiều rộng 423px */
+    -fx-pref-height: 75px; /* Chiều cao 75px */
+}
+
+.label-check {
+    -fx-pref-width: 423px; /* Chiều rộng 423px */
+    -fx-font-size: 18px; /* Cỡ chữ 18px */
+    -fx-font-style: italic; /* Chữ nghiêng */
+    -fx-text-fill: red; /* Màu chữ đỏ */
+}
+
+.label-signup {
+    -fx-font-size: 25px; /* Cỡ chữ 18px */
+}
+
+.label-forgot-password {
+    -fx-font-size: 25px; /* Cỡ chữ 18px */
+    -fx-text-fill: white; /* Màu chữ xanh */
+    -fx-font-style: bold; /* Chữ đậm */
+}
+
+.stack-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.3); /* Trắng mờ */
+    -fx-background-radius: 20px; /* Bo góc */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+}
+
+.anchor-pane-main {
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* Kính mờ nhẹ */
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.3, 0, 2);
+}
+
+.anchor-pane-content {
+    -fx-background-color: linear-gradient(to bottom, #E3EAFD, #C5D1FF); /* Xanh nhạt */
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.2, 0, 3);
+}
+
+.anchor-pane-gray {
+    -fx-background-color: #F5F5F5; /* Xám nhạt */
+    -fx-background-radius: 10px; /* Bo góc mềm mại */
+    -fx-border-radius: 10px; /* Bo góc viền */
+    -fx-border-color: #D0D0D0; /* Màu viền xám nhạt hơn */
+    -fx-border-width: 1px; /* Độ dày viền */
+    -fx-padding: 10px; /* Khoảng cách lề bên trong */
+}
+
+.anchor-pane-form {
+    -fx-background-color: rgba(255, 255, 255, 0.15); /* Tăng độ trong suốt */
+    -fx-background-radius: 15px;
+    -fx-border-color: rgba(255, 255, 255, 0.5); /* Viền trắng nhẹ */
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 15, 0, 0, 5);
+}
+
+.label-title {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Màu chữ đen đậm */
+}
+
+.field-form {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 35px;
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Nền mờ */
+    -fx-background-radius: 10px; /* Bo góc */
+    -fx-border-color: #1E90FF; /* Viền màu xanh */
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px; /* Tăng độ dày viền */
+    -fx-padding: 5px 10px;
+    -fx-font-size: 15px; /* Tăng kích thước chữ */
+    -fx-text-fill: black; /* Chữ màu đen */
+}
+
+.radio-button {
+    -fx-font-size: 15px; /* Kích thước chữ */
+    -fx-text-fill: black; /* Màu chữ đen */
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Nền mờ */
+    -fx-background-radius: 10px; /* Bo góc */
+    -fx-border-color: #1E90FF; /* Viền màu xanh */
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px; /* Độ dày viền */
+    -fx-padding: 5px 10px;
+}
+
+/* Khi RadioButton được chọn */
+.radio-button:selected {
+    -fx-border-color: #0073e6; /* Màu xanh đậm hơn khi chọn */
+    -fx-background-color: rgba(255, 255, 255, 1);
+    -fx-effect: dropshadow(gaussian, rgba(30, 144, 255, 0.5), 5, 0, 0, 0);
+}
+
+/* Tùy chỉnh vòng tròn của RadioButton */
+.radio-button .radio {
+    -fx-background-color: white;
+    -fx-border-color: #1E90FF; /* Viền xanh */
+    -fx-border-radius: 50%;
+    -fx-border-width: 2px;
+}
+
+/* Khi RadioButton được chọn, tô màu bên trong */
+.radio-button:selected .radio {
+    -fx-background-color: #1E90FF; /* Màu xanh khi chọn */
+}

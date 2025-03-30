@@ -1,0 +1,57 @@
+/* ==========================
+   Định dạng chung cho TableView
+   ========================== */
+.table-view {
+    -fx-background-color: transparent; /* Nền trong suốt */
+    -fx-border-color: transparent; /* Bỏ viền */
+
+    -fx-border-radius: 15px;
+    -fx-padding: 0px;
+    -fx-font-family: "System";
+    -fx-font-size: 15px;
+}
+
+/* ==========================
+   Ẩn đường kẻ dọc, chỉ giữ lại kẻ ngang
+   ========================== */
+.table-row-cell {
+    -fx-border-color: #ddd; /* Màu đường kẻ ngang */
+    -fx-border-width: 0px 0px 1px 0px; /* Chỉ có đường kẻ ngang */
+}
+
+/* ==========================
+   Header (Tiêu đề cột)
+   ========================== */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #6ec1e4, #348ac7);
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 5px 0.5px; /* Điều chỉnh padding để text header sát hơn */
+}
+
+/* ==========================
+   Hover effect khi rê chuột vào hàng
+   ========================== */
+.table-row-cell:hover {
+    -fx-background-color: #e3f2fd;
+}
+
+/* ==========================
+   Hàng được chọn
+   ========================== */
+.table-row-cell:selected {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+/* ==========================
+   Ẩn đường kẻ dọc của các ô
+   ========================== */
+.table-cell {
+    -fx-border-width: 0px 0px 1px 0px; /* Chỉ có đường kẻ ngang */
+    -fx-alignment: center;
+}

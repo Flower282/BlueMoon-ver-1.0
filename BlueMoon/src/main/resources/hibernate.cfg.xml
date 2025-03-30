@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">
+            jdbc:postgresql://ep-bold-hall-a13ek11u-pooler.ap-southeast-1.aws.neon.tech:5432/bluemoon_db?currentSchema=schema_duong
+        </property>
+        <property name="hibernate.connection.username">bluemoon_db_owner</property>
+        <property name="hibernate.connection.password">npg_yFvC7hIes4tb</property>
+
+        <!-- Hibernate properties -->
+
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.use_sql_comments">false</property>
+        <property name="hibernate.generate_statistics">false</property>
+        <property name="org.hibernate.SQL">OFF</property>
+        <property name="hibernate.physical_naming_strategy">
+            org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        </property>
+
+        <!-- Entity mapping -->
+        <mapping class="org.example.bluemoon.models.User"/>
+        <mapping class="org.example.bluemoon.models.HoKhau"/>
+        <mapping class="org.example.bluemoon.models.NhanKhau"/>
+        <mapping class="org.example.bluemoon.models.KhoanThu"/>
+        <mapping class="org.example.bluemoon.models.TamTruTamVang"/>
+        <mapping class="org.example.bluemoon.models.ThayDoiLichSu"/>
+        <mapping class="org.example.bluemoon.models.NopTien"/>
+
+
+    </session-factory>
+</hibernate-configuration>

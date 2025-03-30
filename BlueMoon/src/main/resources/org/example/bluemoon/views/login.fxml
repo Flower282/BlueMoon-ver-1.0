@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root"
+            stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bluemoon.controller.LoginController">
+    <center>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="576.0" prefWidth="1024.0" styleClass="anchor-pane-content"
+                    stylesheets="@../style/style.css" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="272.0" fitWidth="574.0" layoutX="526.0" layoutY="48.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../images/start.png"/>
+                    </image>
+                    <effect>
+                        <Reflection fraction="0.6" topOpacity="0.36"/>
+                    </effect>
+                </ImageView>
+                <AnchorPane layoutX="36.0" layoutY="29.0" prefHeight="526.0" prefWidth="470.0" styleClass="stack-pane"
+                            stylesheets="@../style/style.css">
+                    <children>
+                        <TextField fx:id="usernameField" layoutX="23.5" layoutY="55.0" prefHeight="71.0"
+                                   prefWidth="359.0" promptText="Tên đăng nhập" styleClass="field"
+                                   stylesheets="@../style/style.css">
+                            <font>
+                                <Font size="25.0"/>
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="passwordField" layoutX="23.5" layoutY="189.0" prefHeight="71.0"
+                                       prefWidth="359.0" promptText="Mật khẩu" styleClass="field"
+                                       stylesheets="@../style/style.css">
+                            <font>
+                                <Font size="25.0"/>
+                            </font>
+                        </PasswordField>
+                        <Button fx:id="login_button" layoutX="23.5" layoutY="350.0" mnemonicParsing="false"
+                                onAction="#handleLogin" prefHeight="75.0" prefWidth="423.0" styleClass="button-login"
+                                stylesheets="@../style/style.css" text="Đăng nhập">
+                            <font>
+                                <Font name="System Bold" size="25.0"/>
+                            </font>
+                        </Button>
+                        <Label fx:id="text_empty" layoutX="23.5" layoutY="17.0" styleClass="label-check"
+                               stylesheets="@../style/style.css" text="*Không được để trống tên đăng nhập"
+                               textFill="#f40000" visible="false">
+                            <font>
+                                <Font name="System Italic" size="12.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="pass_empty" layoutX="23.5" layoutY="151.0" styleClass="label-check"
+                               stylesheets="@../style/style.css" text="*Không được để trống mật khẩu" textFill="#f40000"
+                               visible="false">
+                            <font>
+                                <Font name="System Italic" size="12.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="login_failed" layoutX="23.5" layoutY="281.0" managed="true"
+                               styleClass="label-check" stylesheets="@../style/style.css"
+                               text="Tên đăng nhập hoặc mật khẩu không chính xác, vui lòng thử lại!" textFill="#f40000"
+                               visible="false" wrapText="true">
+                            <font>
+                                <Font name="System Italic" size="12.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="forgot_password" accessibleRole="BUTTON" layoutX="23.0" layoutY="442.0"
+                               prefHeight="40.0" prefWidth="175.0" styleClass="label-forgot-password"
+                               stylesheets="@../style/style.css" text="Quên mật khẩu" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="25.0"/>
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets left="128.0" top="72.0"/>
+            </padding>
+        </AnchorPane>
+    </center>
+</BorderPane>

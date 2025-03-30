@@ -1,0 +1,19 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Hibernate Logging -->
+    <logger name="org.hibernate.SQL" level="INFO"/>
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="WARN"/>
+    <logger name="org.hibernate.type.descriptor.sql.BasicExtractor" level="WARN"/>
+
+    <!-- Tắt hoàn toàn Hibernate Debug -->
+    <logger name="org.hibernate" level="OFF"/>
+
+    <root level="OFF">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root"
+      stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.bluemoon.controller.SignUpController">
+    <children>
+        <AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="anchor-pane-behind"
+                    stylesheets="@../style/style.css"/>
+        <AnchorPane layoutX="128.0" layoutY="72.0" prefHeight="576.0" prefWidth="1024.0" styleClass="anchor-pane"
+                    stylesheets="@../style/style.css">
+            <children>
+                <ImageView fitHeight="272.0" fitWidth="574.0" layoutX="526.0" layoutY="48.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../images/start.png"/>
+                    </image>
+                    <effect>
+                        <Reflection/>
+                    </effect>
+                </ImageView>
+                <AnchorPane layoutX="36.0" layoutY="29.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0"
+                            prefWidth="470.0" styleClass="login-pane" stylesheets="@../style/style.css">
+                    <children>
+                        <TextField layoutX="23.5" layoutY="40.0" prefHeight="71.0" prefWidth="359.0"
+                                   promptText="Tên đăng nhập" styleClass="field" stylesheets="@../style/style.css">
+                            <font>
+                                <Font size="25.0"/>
+                            </font>
+                        </TextField>
+                        <TextField layoutX="23.5" layoutY="160.0" prefHeight="71.0" prefWidth="359.0"
+                                   promptText="Mật khẩu" styleClass="field" stylesheets="@../style/style.css">
+                            <font>
+                                <Font size="25.0"/>
+                            </font>
+                        </TextField>
+                        <Button fx:id="signup_button" layoutX="23.5" layoutY="380.0" mnemonicParsing="false"
+                                prefHeight="75.0" prefWidth="423.0" styleClass="button-login"
+                                stylesheets="@../style/style.css" text="Tạo tài khoản">
+                            <font>
+                                <Font name="System Bold" size="25.0"/>
+                            </font>
+                        </Button>
+                        <Label fx:id="returnLoginLabel" accessibleRole="BUTTON" layoutX="24.0" layoutY="470.0"
+                               onMouseClicked="#returnLogin" prefHeight="40.0" prefWidth="288.0"
+                               styleClass="label-create-account" stylesheets="@../style/style.css"
+                               text="Quay lại trang đăng nhập" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="25.0"/>
+                            </font>
+                        </Label>
+                        <TextField layoutX="23.5" layoutY="280.0" prefHeight="71.0" prefWidth="359.0"
+                                   promptText="Nhập lại mật khẩu" styleClass="field" stylesheets="@../style/style.css">
+                            <font>
+                                <Font size="25.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</Pane>

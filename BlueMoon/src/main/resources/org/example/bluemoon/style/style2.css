@@ -1,0 +1,45 @@
+/* Tạo viền bo tròn cho ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent; /* Nền trong suốt */
+    -fx-border-color: #ddd; /* Viền nhẹ */
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px; /* Bo tròn góc */
+    -fx-padding: 5px;
+}
+
+/* Tùy chỉnh khu vực hiển thị nội dung */
+.scroll-pane .viewport {
+    -fx-background-color: transparent; /* Nền trắng */
+    -fx-border-radius: 8px;
+}
+
+
+/* Tùy chỉnh thanh cuộn dọc */
+.scroll-pane .scroll-bar {
+    -fx-background-color: transparent; /* Ẩn nền thanh cuộn */
+    -fx-pref-width: 8px; /* Chiều rộng nhỏ gọn */
+}
+
+/* Tùy chỉnh phần kéo của thanh cuộn */
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #ccc; /* Màu nhạt */
+    -fx-background-radius: 4px; /* Bo góc */
+}
+
+/* Khi di chuột vào thanh cuộn */
+.scroll-pane .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #bbb;
+}
+
+/* Ẩn nút mũi tên của thanh cuộn */
+.scroll-pane .increment-button,
+.scroll-pane .decrement-button {
+    -fx-opacity: 0;
+    -fx-pref-height: 0px;
+    -fx-pref-width: 0px;
+}
+
+.jfx-radio-button {
+    -fx-text-fill: #333; /* Màu chữ */
+    -fx-font-size: 16px; /* Cỡ chữ */
+}
